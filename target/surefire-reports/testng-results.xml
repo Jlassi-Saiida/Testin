@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-03T15:14:18 GMT+01:00" name="Suite" finished-at="2024-07-03T15:14:59 GMT+01:00" duration-ms="40871">
+    <groups>
+    </groups>
+    <test started-at="2024-07-03T15:14:18 GMT+01:00" name="Test" finished-at="2024-07-03T15:14:59 GMT+01:00" duration-ms="40871">
+      <class name="pagesTest.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:18 GMT+01:00" name="setUp" finished-at="2024-07-03T15:14:26 GMT+01:00" duration-ms="8391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithCsvData(java.lang.String,java.lang.String)[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:26 GMT+01:00" name="loginWithCsvData" data-provider="csvData" finished-at="2024-07-03T15:14:27 GMT+01:00" duration-ms="530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCsvData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:27 GMT+01:00" name="tearDown" finished-at="2024-07-03T15:14:27 GMT+01:00" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:27 GMT+01:00" name="setUp" finished-at="2024-07-03T15:14:30 GMT+01:00" duration-ms="2676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithCsvData(java.lang.String,java.lang.String)[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:30 GMT+01:00" name="loginWithCsvData" data-provider="csvData" finished-at="2024-07-03T15:14:40 GMT+01:00" duration-ms="10719" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for url to contain "/inventory.html". Current url: "https://www.saucedemo.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\TOPINF~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53604/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ac2eba439b2d53ebbb15df140027a9b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "/inventory.html". Current url: "https://www.saucedemo.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\TOPINF~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53604/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ac2eba439b2d53ebbb15df140027a9b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.LoginPage.login(LoginPage.java:42)
+at pagesTest.LoginPageTest.loginWithCsvData(LoginPageTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCsvData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:40 GMT+01:00" name="tearDown" finished-at="2024-07-03T15:14:41 GMT+01:00" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:41 GMT+01:00" name="setUp" finished-at="2024-07-03T15:14:43 GMT+01:00" duration-ms="2520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithCsvData(java.lang.String,java.lang.String)[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:43 GMT+01:00" name="loginWithCsvData" data-provider="csvData" finished-at="2024-07-03T15:14:44 GMT+01:00" duration-ms="525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCsvData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:44 GMT+01:00" name="tearDown" finished-at="2024-07-03T15:14:44 GMT+01:00" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:44 GMT+01:00" name="setUp" finished-at="2024-07-03T15:14:47 GMT+01:00" duration-ms="2716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithCsvData(java.lang.String,java.lang.String)[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:47 GMT+01:00" name="loginWithCsvData" data-provider="csvData" finished-at="2024-07-03T15:14:52 GMT+01:00" duration-ms="5568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCsvData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:52 GMT+01:00" name="tearDown" finished-at="2024-07-03T15:14:52 GMT+01:00" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:52 GMT+01:00" name="setUp" finished-at="2024-07-03T15:14:55 GMT+01:00" duration-ms="2420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithCsvData(java.lang.String,java.lang.String)[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:55 GMT+01:00" name="loginWithCsvData" data-provider="csvData" finished-at="2024-07-03T15:14:55 GMT+01:00" duration-ms="497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCsvData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:55 GMT+01:00" name="tearDown" finished-at="2024-07-03T15:14:56 GMT+01:00" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:56 GMT+01:00" name="setUp" finished-at="2024-07-03T15:14:58 GMT+01:00" duration-ms="2373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithCsvData(java.lang.String,java.lang.String)[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:58 GMT+01:00" name="loginWithCsvData" data-provider="csvData" finished-at="2024-07-03T15:14:58 GMT+01:00" duration-ms="509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithCsvData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagesTest.LoginPageTest@60099951]" started-at="2024-07-03T15:14:58 GMT+01:00" name="tearDown" finished-at="2024-07-03T15:14:59 GMT+01:00" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pagesTest.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
